@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podrias ser mi san valentin?</title>
+    <style>
+        body {
+            background-color: black; /* Set background color to black */
+            color: white; /* Set text color to white */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .textbox {
+            margin-bottom: 10px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #ff4081;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #ff80ab;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Podrias ser mi san valentin?</h1>
+        <img src="https://img.freepik.com/premium-vector/cute-cow-with-love-heart-cartoon-vector-icon-illustration-animal-love-icon-concept-isolated-flat_138676-8581.jpg?w=1060" alt="Cartoon Cow with Heart" width="250" height="250">
+        <div class="textbox">
+            <input type="text" id="optionA" placeholder="A: Si">
+        </div>
+        <div class="textbox">
+            <input type="text" id="optionB" placeholder="B: Si pero opcion B">
+        </div>
+        <button class="btn" onclick="submitAnswer()">Submit</button>
+    </div>
+    
+    <script>
+        function submitAnswer() {
+            var optionA = document.getElementById('optionA').value;
+            var optionB = document.getElementById('optionB').value;
+            
+            // You can add logic here to handle the user's choice
+            // For now, let's just close the page
+            if (optionA.toLowerCase() === 'si') {
+                alert('Gracias por aceptar ser mi Valentín amor te amo mooocho');
+            } else if (optionB.toLowerCase() === 'si pero opcion b') {
+                alert(' Gracais amor ahora nos toca estar juntos para siempre ');
+            } else {
+                alert('Gracias baby ahora nos tenemos que cazar');
+            }
+            
+            // Close the page
+            window.close();
+        }
+    </script>
+</body>
+</html>
